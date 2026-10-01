@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        background: #fcfbfe;
+        color: #2c1a32;
+      }
+
+      .navbar {
+        background: #f3eef8;
+        border-bottom: 1px solid #e2d8eb;
+      }
+      .navbar-container {
+        display: flex;
+        align-items: center;
+        padding: 8px 15px;
+      }
+
+      .navbar-brand {
+        font-size: 20px;
+        text-decoration: none;
+        color: #2c1a32;
+        margin-right: 25px;
+        font-weight: bold;
+      }
+      .navbar-menu {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex: 1;
+      }
+      .nav-link {
+        padding: 8px 12px;
+        text-decoration: none;
+        color: #4a2c58;
+      }
+
+      .nav-link:hover {
+        background: #e7ddf2;
+        border-radius: 4px;
+      }
+      .disabled {
+        color: #b3a2be;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #ffffff;
+        width: 180px;
+        padding: 7px 0;
+        border: 1px solid #e2d8eb;
+        box-shadow: 0 4px 12px rgba(44, 26, 50, 0.1);
+      }
+      .dropdown-menu a {
+        display: block;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: #2c1a32;
+      }
+      .dropdown-menu a:hover {
+        background: #f3eef8;
+      }
+      .dropdown:hover .dropdown-menu {
+        display: block;
+      }
+
+      .navbar-button {
+        display: flex;
+        gap: 8px;
+      }
+      .button {
+        padding: 7px 14px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.2s;
+      }
+      .daftar {
+        border: 1px solid #d4af37;
+        color: #b89128;
+      }
+      .daftar:hover {
+        background: #d4af37;
+        color: #ffffff;
+      }
+      .masuk {
+        border: 1px solid #4a2c58;
+        color: #4a2c58;
+      }
+      .masuk:hover {
+        background: #4a2c58;
+        color: #ffffff;
+      }
+
+      .hero {
+        padding: 60px 8%;
+      }
+      .hero-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .hero-text {
+        width: 60%;
+      }
+
+      h1 {
+        font-family: Georgia;
+        font-size: 42px;
+        margin-bottom: 20px;
+        color: #2c1a32;
+      }
+      .hero-text p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 20px;
+        color: #4a2c58;
+      }
+
+      .instagram {
+        padding: 9px 18px;
+        border: 1px solid #d4af37;
+        border-radius: 6px;
+        text-decoration: none;
+        color: #b89128;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+      .instagram:hover {
+        background: #d4af37;
+        color: #ffffff;
+      }
+
+      .hero-image {
+        width: 40%;
+        text-align: center;
+      }
+      .hero-image img {
+        width: 300px;
+        max-width: 100%;
+      }
+
+      .cards {
+        padding: 30px 8%;
+      }
+      .card-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+      }
+
+      .card {
+        width: 50%;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #4a2c58;
+        color: #ffffff;
+        box-shadow: 0 8px 20px rgba(44, 26, 50, 0.15);
+        border: 1px solid #d4af37;
+      }
+      .card img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        display: block;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h3 {
+        color: #fcfbfe;
+        margin-bottom: 8px;
+      }
+      .card-content p {
+        color: #e2d8eb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <div class="navbar-menu">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Link</a>
+          <div class="dropdown">
+            <a href="#" class="nav-link">TUGAS ▾</a>
+            <div class="dropdown-menu">
+              <a href="https://olivianadinta.github.io/tugasproweboliv/">Tugas 1</a>
+              <a href="https://olivianadinta.github.io/TugasProweb2/">Tugas 2</a>
+              <a href=" https://olivianadinta.github.io/TugasProWeb3/">Tugas 3</a>
+            </div>
+          </div>
+          <a href="#" class="nav-link disabled">Disabled</a>
+        </div>
+        <div class="navbar-button">
+          <a href="#" class="button daftar">Daftar</a>
+          <a href="#" class="button masuk">Masuk</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Hi Guys!<br />Selamat Datang di Website Olivia Nadinta</h1>
+          <a
+            href="https://www.instagram.com/olivendne?stkn=ZmJna2NjMDVuOXFz"
+            class="instagram"
+            target="_blank"
+            >@olivendne</a
+          >
+        </div>
+        <div class="hero-image">
+          <img src="image1.jpeg" alt="Logo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <div class="card-container">
+        <div class="card">
+          <img src="image2.jpeg" alt="Gambar 1" />
+          <div class="card-content">
+            <h3>Junior High School's Friends</h3>
+            <p>Having so much fun!</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="image3.jpeg" alt="Gambar 2" />
+          <div class="card-content">
+            <h3>High School's Friends</h3>
+            <p>Christmas day!!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

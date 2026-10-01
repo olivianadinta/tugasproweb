@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style-olip.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Form Pendaftaran</legend>
+
+        <div class="form">
+          <label for="pengguna">Username:</label>
+          <input type="text" id="pengguna" name="pengguna" />
+        </div>
+
+        <div class="form">
+          <label for="sandi">Password:</label>
+          <input type="password" id="sandi" name="sandi" />
+        </div>
+
+        <div class="form">
+          <label for="tgllahir">Tanggal Lahir</label>
+          <input type="date" id="tgllahir" name="tgllahir" />
+        </div>
+
+        <div class="form">
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat"></textarea>
+        </div>
+
+        <div class="form">
+          <label for="gender">Jenis Kelamin</label>
+
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="jk" value="laki-laki" />
+              Laki-laki
+            </label>
+
+            <label>
+              <input type="radio" name="jk" value="perempuan" />
+              Perempuan
+            </label>
+          </div>
+        </div>
+
+        <div class="select-group">
+          <label for="prodi">Program Studi:</label>
+          <select name="prodi" id="prodi">
+            <option value="opsi1">S1 Ilmu Komputer</option>
+            <option value="opsi2">S1 Teknologi Informasi</option>
+            <option value="opsi3">S2 Teknik Informatika</option>
+            <option value="opsi4">S2 Sains Data dan Kecerdasan Buatan</option>
+            <option value="opsi5">S3 Ilmu Komputer</option>
+          </select>
+        </div>
+
+        <div class="checkbox-group">
+          <label>Mata Kuliah Favorit:</label>
+
+          <label class="checkbox-item">
+            <input type="checkbox" name="matkul" value="Pendidikan Pancasila" />
+            Pendidikan Pancasila
+          </label>
+
+          <label class="checkbox-item">
+            <input type="checkbox" name="matkul" value="Bahasa Indonesia" />
+            Bahasa Indonesia
+          </label>
+
+          <label class="checkbox-item">
+            <input type="checkbox" name="matkul" value="Matematika Dasar" />
+            Matematika Dasar
+          </label>
+
+          <label class="checkbox-item">
+            <input
+              type="checkbox"
+              name="matkul"
+              value="Pengantar Teknologi Informasi"
+            />
+            Pengantar Teknologi Informasi
+          </label>
+
+          <label class="checkbox-item">
+            <input
+              type="checkbox"
+              name="matkul"
+              value="Organisasi dan Arsitektur Komputer"
+            />
+            Organisasi dan Arsitektur Komputer
+          </label>
+
+          <label class="checkbox-item">
+            <input type="checkbox" name="matkul" value="Dasar Pemrograman" />
+            Dasar Pemrograman
+          </label>
+
+          <label class="checkbox-item">
+            <input type="checkbox" name="matkul" value="Pemrograman Web" />
+            Pemrograman Web
+          </label>
+        </div>
+
+        <div class="button-group">
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

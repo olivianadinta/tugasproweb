@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Beach - Lombok</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #e66a85;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #c8526d;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 10px;
+      transition: background 0.3s;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    
+    .container {
+      display: grid;
+      grid-template-columns: 280px 1fr; /* Lebar sidebar 280px, sisa area untuk main */
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+      gap: 20px;
+    }
+
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom jika dibuka di smartphone */
+      }
+    }
+
+    aside {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      height: fit-content;
+    }
+
+    aside h2, aside h3 {
+      color: #e66a85;
+      margin-bottom: 12px;
+    }
+
+    aside ul {
+      list-style-type: none;
+      margin-bottom: 20px;
+    }
+
+    aside ul li {
+      margin-bottom: 10px;
+    }
+
+    aside ul li a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    aside ul li a:hover {
+      color: #e66a85;
+      text-decoration: underline;
+    }
+
+    main {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    main section {
+      margin-bottom: 25px;
+    }
+
+    main h3 {
+      color: #e66a85;
+      border-bottom: 2px solid #f2a4b5;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .img-container {
+      margin-bottom: 15px;
+    }
+
+    .img-container img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    ol, ul.content-list {
+      padding-left: 20px;
+    }
+
+    ol li, ul.content-list li {
+      margin-bottom: 8px;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #2e4057;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pink Beach</h1>
+    <p>Pantai Pasir Merah Muda yang Eksotis di Lombok</p>
+  </header>
+
+  <nav>
+    <a href="#tentang">Tentang Pink Beach</a>
+    <a href="#destinasi">Daya Tarik</a>
+    <a href="#aktivitas">Aktivitas</a>
+    <a href="#akses">Cara Menuju Lokasi</a>
+  </nav>
+
+  <div class="container">
+    
+    <aside>
+      <h2>Info Singkat</h2>
+      <ul>
+        <li><b>Lokasi:</b> Desa Sekaroh, Jerowaru, Kabupaten Lombok Timur, NTB</li>
+        <li><b>Waktu Terbaik:</b> Pagi hingga siang hari</li>
+        <li><b>Fasilitas:</b> Warung makan, gazebo, sewa alat snorkeling, dan perahu</li>
+      </ul>
+
+      <hr />
+
+      <h3>Rekomendasi Wisata</h3>
+      <ul>
+        <li><b>Daya Tarik:</b> Pasir berwarna merah muda &amp; keasrian alam</li>
+        <li><b>Destinasi Terdekat:</b>
+          <ul style="padding-left: 15px; margin-top: 5px;">
+            <li><a href="#destinasi">Gili Petelu</a></li>
+            <li><a href="#destinasi">Tanjung Ringgit</a></li>
+            <li><a href="#destinasi">Gili Pasir</a></li>
+            <li><a href="#destinasi">Bukit Tangsi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+
+    <main>
+      
+      <section id="tentang">
+        <h3>Keindahan Pantai Tangsi (Pink Beach)</h3>
+        <div class="img-container">
+          <img src="WhatsApp Image 2026-09-01 at 23.24.31.jpeg" alt="Pantai Pink Lombok" />
+        </div>
+        <p>
+          <b>Pink Beach</b> atau yang memiliki nama asli <b>Pantai Tangsi</b> adalah salah satu dari sedikit pantai di dunia yang memiliki pasir berwarna merah muda. Pantai ini terletak di Desa Sekaroh, Kecamatan Jerowaru, Kabupaten Lombok Timur, Nusa Tenggara Barat. Warna pink pada pasirnya berasal dari campuran pasir putih dengan serpihan terumbu karang berwarna merah yang telah hancur. Dikelilingi bukit-bukit hijau dan air laut yang sangat jernih, pantai ini menawarkan pemandangan alam yang menenangkan dan sangat instagramable.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="destinasi">
+        <h3>Keunikan &amp; Daya Tarik Sekitar</h3>
+        <ol>
+          <li><b>Gili Petelu:</b> Spot <i>snorkeling</i> populer dengan terumbu karang indah dan beragam ikan hias.</li>
+          <li><b>Tanjung Ringgit:</b> Tebing karang terjal dengan pemandangan Samudra Hindia dan peninggalan sejarah meriam Jepang.</li>
+          <li><b>Gili Pasir:</b> Pulau pasir timbul di tengah laut yang hanya muncul saat air laut sedang surut.</li>
+          <li><b>Bukit Tangsi:</b> Area perbukitan kecil di sekitar pantai untuk melihat panorama laut dari ketinggian.</li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section id="aktivitas">
+        <h3>Aktivitas Wajib di Pink Beach</h3>
+        <ul class="content-list">
+          <li>Berenang dan menikmati kebersihan air laut yang tenang.</li>
+          <li><i>Snorkeling</i> untuk melihat biota laut dan terumbu karang di sekitar pulau kecil (Gili).</li>
+          <li>Berfoto dengan latar belakang pasir berwarna merah muda.</li>
+          <li>Mendaki Bukit Tangsi untuk menikmati pemandangan lanskap dari atas.</li>
+          <li>Menikmati hidangan laut (seafood) segar dari warung lokal.</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <section id="akses">
+        <h3>Cara Menuju Lokasi</h3>
+        <p>
+          Untuk mencapai Pink Beach dari Kota Mataram atau Bandara Internasional Lombok (BIL), Anda dapat menggunakan kendaraan darat (mobil atau sepeda motor) dengan waktu tempuh sekitar 2 hingga 2,5 jam menuju Pelabuhan Tanjung Luar. Dari Pelabuhan Tanjung Luar, perjalanan dapat dilanjutkan menggunakan perahu sewaan (perahu motor lokal) selama sekitar 1 jam menyusuri laut menuju lokasi pantai.
+        </p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 261402060 Olivia Nadinta Sitohang - Pemrograman Web</p>
+  </footer>
+
+</body>
+</html>
